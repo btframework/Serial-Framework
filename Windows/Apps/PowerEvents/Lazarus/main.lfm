@@ -1,0 +1,52 @@
+object fmMain: TfmMain
+  Left = 257
+  Height = 335
+  Top = 123
+  Width = 436
+  BorderStyle = bsSingle
+  Caption = 'Power Events test application'
+  ClientHeight = 335
+  ClientWidth = 436
+  Font.Height = -12
+  Font.Name = 'Arial'
+  Font.Pitch = fpFixed
+  Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object btOpen: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Open'
+    TabOrder = 0
+    OnClick = btOpenClick
+  end
+  object btClose: TButton
+    Left = 88
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Close'
+    TabOrder = 1
+    OnClick = btCloseClick
+  end
+  object btGetState: TButton
+    Left = 184
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Get state'
+    TabOrder = 2
+    OnClick = btGetStateClick
+  end
+  object lbLog: TListBox
+    Left = 8
+    Height = 281
+    Top = 40
+    Width = 417
+    ItemHeight = 0
+    TabOrder = 3
+  end
+end

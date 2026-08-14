@@ -1,0 +1,49 @@
+object fmMain: TfmMain
+  Left = 257
+  Height = 413
+  Top = 123
+  Width = 511
+  BorderStyle = bsSingle
+  Caption = 'Limited Access Feature Manager Sample Application'
+  ClientHeight = 413
+  ClientWidth = 511
+  Font.Height = -12
+  Font.Name = 'Arial'
+  Font.Pitch = fpFixed
+  Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
+  OnCreate = FormCreate
+  object laAvailableLaf: TLabel
+    Left = 8
+    Height = 15
+    Top = 16
+    Width = 76
+    Caption = 'Available LAF:'
+  end
+  object cbLaf: TComboBox
+    Left = 96
+    Height = 23
+    Top = 11
+    Width = 335
+    ItemHeight = 15
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object btUnlock: TButton
+    Left = 431
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Unlock'
+    TabOrder = 1
+    OnClick = btUnlockClick
+  end
+  object lbLog: TListBox
+    Left = 8
+    Height = 360
+    Top = 42
+    Width = 498
+    ItemHeight = 0
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,62 @@
+object fmMain: TfmMain
+  Left = 256
+  Height = 389
+  Top = 145
+  Width = 531
+  BorderStyle = bsSingle
+  Caption = 'Error Information'
+  ClientHeight = 389
+  ClientWidth = 531
+  Font.Height = -12
+  Font.Name = 'Arial'
+  Font.Pitch = fpFixed
+  Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
+  object laPath: TLabel
+    Left = 8
+    Height = 15
+    Top = 24
+    Width = 133
+    Caption = 'Errors definition file path'
+  end
+  object laDescr: TLabel
+    Left = 8
+    Height = 15
+    Top = 64
+    Width = 274
+    Caption = 'Error code. Start with $ or 0x for hexadecimal value'
+  end
+  object edPath: TEdit
+    Left = 152
+    Height = 23
+    Top = 16
+    Width = 369
+    TabOrder = 0
+    Text = 'errors8.xml'
+  end
+  object edError: TEdit
+    Left = 296
+    Height = 23
+    Top = 58
+    Width = 121
+    TabOrder = 1
+    Text = '$00000000'
+  end
+  object btGetDetails: TButton
+    Left = 446
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Get details'
+    TabOrder = 2
+    OnClick = btGetDetailsClick
+  end
+  object lbErrorInfo: TListBox
+    Left = 8
+    Height = 281
+    Top = 96
+    Width = 513
+    ItemHeight = 0
+    TabOrder = 3
+  end
+end

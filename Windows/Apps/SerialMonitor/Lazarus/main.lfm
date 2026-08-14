@@ -1,0 +1,100 @@
+object fmMain: TfmMain
+  Left = 257
+  Height = 460
+  Top = 123
+  Width = 556
+  BorderStyle = bsSingle
+  Caption = 'Serial Monitor Test'
+  ClientHeight = 460
+  ClientWidth = 556
+  Font.Height = -12
+  Font.Name = 'Arial'
+  Font.Pitch = fpFixed
+  Position = poScreenCenter
+  LCLVersion = '4.2.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object btStart: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Start'
+    TabOrder = 0
+    OnClick = btStartClick
+  end
+  object btStop: TButton
+    Left = 88
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Stop'
+    TabOrder = 1
+    OnClick = btStopClick
+  end
+  object lbLog: TListBox
+    Left = 8
+    Height = 193
+    Top = 256
+    Width = 537
+    ItemHeight = 0
+    TabOrder = 2
+  end
+  object btClear: TButton
+    Left = 470
+    Height = 25
+    Top = 224
+    Width = 75
+    Caption = 'Clear'
+    TabOrder = 3
+    OnClick = btClearClick
+  end
+  object btEnumSerial: TButton
+    Left = 184
+    Height = 25
+    Top = 8
+    Width = 88
+    Caption = 'Enum serial'
+    TabOrder = 4
+    OnClick = btEnumSerialClick
+  end
+  object lvDevices: TListView
+    Left = 8
+    Height = 169
+    Top = 40
+    Width = 537
+    Columns = <>
+    GridLines = True
+    ReadOnly = True
+    RowSelect = True
+    TabOrder = 5
+    ViewStyle = vsReport
+  end
+  object btEnumUSB: TButton
+    Left = 280
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Enum USB'
+    TabOrder = 6
+    OnClick = btEnumUSBClick
+  end
+  object btEnable: TButton
+    Left = 470
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Enable'
+    TabOrder = 7
+    OnClick = btEnableClick
+  end
+  object btDisable: TButton
+    Left = 384
+    Height = 25
+    Top = 8
+    Width = 75
+    Caption = 'Disable'
+    TabOrder = 8
+    OnClick = btDisableClick
+  end
+end
