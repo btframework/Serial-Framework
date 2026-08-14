@@ -1,2 +1,3 @@
 # Serial Framework
-Serial Framework sample applications
+
+This repository contans sample applications for the [Serial Framework](https://www.btframework.com/serialframework.htm).
