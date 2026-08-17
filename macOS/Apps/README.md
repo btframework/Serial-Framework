@@ -3,7 +3,7 @@ This folder contains sample applications for the **Serial Framework** on **macOS
 ## Examples
 | Example | Description |  
 | ------- | ----------- |
-| ErrorInfo | Shows how to get a human-readable description of a Wireless Communication Library error code. |  
+| ErrorInfo | Shows how to get a human-readable description of a [Wireless Communication Library](https://www.btframework.com/wcl.htm) [error code](https://www.btframework.com/errors8.htm). |  
 | OsVer | Shows how to get the macOS version. |  
 | PowerEvents | Shows how to receive OS power events (hibernate/sleep/wake up) and battery status. |  
 | SerialClient | Shows how to use the wclSerialClient class for serial communication. |  
